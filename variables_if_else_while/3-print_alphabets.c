@@ -6,11 +6,20 @@
  */
 int main(void)
 {
-        char i;
-    for (i = 'a'; i <= 'z'; i++)
-        putchar(i);
-    for (i = 'A'; i <= 'Z'; i++)
-        putchar(i);
+        char ch = 'a';
+	char CH = 'A';
+
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		++ch;
+	}
+
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		++CH;
+	}
 	putchar('\n');
 	return (0);
 }
