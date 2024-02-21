@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
+int digit = 0;
+while (digit <= 9)
 {
-if (i == 9)
-putchar(i + '0');
-else
+putchar(digit + '0');
+if (digit != 9)
 {
-putchar(i + '0');
 putchar(',');
 putchar(' ');
 }
+++digit;
 }
+putchar('\n');
 return (0);
 }
