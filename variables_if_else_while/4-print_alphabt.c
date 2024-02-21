@@ -6,11 +6,10 @@
  */
 int main()
 {
-    char i;
-    for (i = 'a'; i <= 'z'; i++)
-        if (i != 'e' && i != 'q')
-            putchar(i);
-
-    putchar('\n');
-    return 0;
+char i;
+for (i = 'a'; i <= 'z'; i++)
+if (i != 'e' && i != 'q')
+putchar(i);
+putchar('\n');
+return (0);
 }
