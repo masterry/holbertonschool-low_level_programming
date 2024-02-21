@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-int digit = 0;
-while (digit <= 9)
+int i = 0;
+while (i <= 9)
 {
-putchar(digit + '0');
-if (digit != 9)
+putchar(i + '0');
+if (i != 9)
 {
 putchar(',');
 putchar(' ');
 }
-++digit;
+++i;
 }
 putchar('\n');
 return (0);
