@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *  main -Entry point
+ *  print_alphabet uses _putchar function to print alphabet
  *
  *  Return: Always 0 (Success)
  */
