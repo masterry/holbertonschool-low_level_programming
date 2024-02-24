@@ -9,25 +9,26 @@
  *
  * Return: Always 0 (Success)
 */
-int main() {
-    int limit = 4000000;
-    int a = 1, b = 2, next_term;
-    long long sum_even = 0; // Using long long to handle large sums
-    
-    while (a <= limit) {
-        // Check if the current term is even
-        if (a % 2 == 0) {
-            sum_even += a;
-        }
-        
-        // Generate the next Fibonacci term
-        next_term = a + b;
-        a = b;
-        b = next_term;
-    }
-    
-    // Print the sum of even-valued terms
-    printf("%lld\n", sum_even);
-    
-    return (0);
+
+int main(void)
+{
+	unsigned long fib1 = 0, fib2 = 1, sum;
+	float total_sum;
+
+	while (1)
+	{
+		sum = fib1 + fib2;
+
+		if (sum > 4000000)
+			break;
+
+		if ((sum % 2) == 0)
+			total_sum += sum;
+
+		fib1 = fib2;
+		fib2 = sum;
+	}
+	printf("%.0f\n", total_sum);
+
+	return (0);
 }
